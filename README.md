@@ -10,5 +10,6 @@ Our group is a team of two consisting of Rosana and I. We have decided to do a M
 
 Here is the link to our shared repository: https://github.com/ITMD362Project2/Project2BookingSystem
 
-My Fork: https://github.com/Sarina-Stoker/Project2BookingSystem
+Sarina's Fork: https://github.com/Sarina-Stoker/Project2BookingSystem
+
 Rosana's Fork: https://github.com/RosanaSincere/Project2BookingSystem
