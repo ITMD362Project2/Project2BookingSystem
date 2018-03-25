@@ -38,16 +38,13 @@ function showSlides() {
     slides[sIndex-1].style.display = "block"; 
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }*/
+$(function(){
+$("#slideshow > img:gt(0)").hide();
 
-$("#slideshow > figure:gt(0)").hide();
-
-setInterval(function() { 
+  setInterval(function() { 
   $('#slideshow > figure:first')
     .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
-
-
+    .next(img).fadeIn(1000)
+    .end().appendTo('#slideshow');},  3000);
+    
+})
