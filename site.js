@@ -42,7 +42,7 @@ $(function(){
 $("#slideshow > img:gt(0)").hide();
 
   setInterval(function() { 
-  $('#slideshow > figure:first')
+  $('#slideshow > img:first')
     .fadeOut(1000)
     .next(img).fadeIn(1000)
     .end().appendTo('#slideshow');},  3000);
