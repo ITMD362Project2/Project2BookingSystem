@@ -9,7 +9,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("posters");
+  var slides = document.getElementsById("posters");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
@@ -24,7 +24,7 @@ function showSlides(n) {
 }
 
 //Automatically changing images
-var sIndex = 0;
+/**var sIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -37,5 +37,14 @@ function showSlides() {
     if (sIndex > slides.length) {sIndex = 1} 
     slides[sIndex-1].style.display = "block"; 
     setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
+}*/
+$(function(){
+$("#slideshow > img:gt(0)").hide();
 
+  setInterval(function() { 
+  $('#slideshow > img:first')
+    .fadeOut(1000)
+    .next(img).fadeIn(1000)
+    .end().appendTo('#slideshow');},  3000);
+    
+})
