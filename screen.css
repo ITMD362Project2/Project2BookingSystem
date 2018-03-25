@@ -51,12 +51,16 @@ table {
   background-color:
 }*/
 
-#slideshow{
+.slideshow{
  /* margin: 3.125em /*50px div 16*/
   max-width:62.5em; /*1000px div 16*/
   height: 18.75em; /*300px div 16*/
   position: relative;
   margin: auto;
+}
+
+.posters{
+  display:none;
 }
 
 img{
