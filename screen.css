@@ -68,6 +68,23 @@ table {
   width: 100%;
   height:18.75em;
 }
+/*img.error-not-fixed, img.error-fixed{
+    display:inline-block;
+    position:relative;
+    width:128px;
+    height:128px;
+    border:15px solid #fff;
+    border-radius:1px;
+    margin:0px;
+    background:#fff;
+}
+img.error-fixed {
+    background: #CCC url(blackpanther.PNG) 0 0 no-repeat;
+    text-indent: -9999px;
+    border: 15px solid #fff;
+    color: transparent;
+    -webkit-appearance: none;
+}*/
 
 .dot {
   text-align:center;

@@ -9,7 +9,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsById("posters");
+  var slides = document.getElementsByClassName("posters");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
@@ -44,7 +44,7 @@ $("#slideshow > img:gt(0)").hide();
   setInterval(function() { 
   $('#slideshow > img:first')
     .fadeOut(1000)
-    .next(img).fadeIn(1000)
+    .next('img').fadeIn(1000)
     .end().appendTo('#slideshow');},  3000);
     
 })
