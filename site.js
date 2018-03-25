@@ -24,7 +24,7 @@ function showSlides(n) {
 }
 
 //Automatically changing images
-var sIndex = 0;
+/**var sIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -37,5 +37,17 @@ function showSlides() {
     if (sIndex > slides.length) {sIndex = 1} 
     slides[sIndex-1].style.display = "block"; 
     setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
+}*/
+
+$("#slideshow > figure:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > figure:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
 
