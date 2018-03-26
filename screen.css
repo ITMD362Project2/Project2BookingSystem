@@ -98,6 +98,7 @@ img.error-fixed {
 }
 div{
   text-align:center;
+  padding-top: 0.625em /*10px div 16*/
 }
 
 footer{
