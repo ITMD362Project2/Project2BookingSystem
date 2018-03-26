@@ -9,7 +9,12 @@
 
   <body id="body">
     <header id="header">
-      <h1>Location</h1>
+      <h1>Find the nearest Location</h1>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script type="text/javascript" src="Project2/zip_search/zip_search/mapdata.js"></script>
+  <script  type="text/javascript" src="Project2/zip_search/zip_search/usmap.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA906jzwtnuC-NhutysGF95o0sn0_dFirk&callback=initMap"
+    type="text/javascript"></script>
     </header>
     <main id="content">
       <article id="primary">
@@ -17,7 +22,8 @@
           <div id="map"></div>
           <form action="#null" method="get">
           <!--  <input type="list" id="city" name="city"> -->
-            <select name="state">
+
+        <!--    <select name="state">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AS">American Samosa</option>
@@ -69,15 +75,64 @@
               <option value="WI">Wisconsin</option>
             </select>
           </form>
-          <div id="map"></div>
+        <!- <div id="map"></div>
+        **script for map -->
+        <p id="demo">Click the button to get your position.</p>
+
+        <button onclick="getLocation()">find me</button>
+
+        <div id="mapholder"></div>
+
+    <script>
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+          if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition, showError);
+          } else {
+              x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+      }
+
+      function showPosition(position) {
+          var latlon = position.coords.latitude + "," + position.coords.longitude;
+          var img_url = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDJHqM95J8cSJBC9UJriQfRssT5n4pDsNo&callback=myMap"
+          +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+          document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+      }
+
+      function showError(error) {
+          switch(error.code) {
+              case error.PERMISSION_DENIED:
+                  x.innerHTML = "User denied the request for Geolocation."
+                  break;
+              case error.POSITION_UNAVAILABLE:
+                  x.innerHTML = "Location information is unavailable."
+                  break;
+              case error.TIMEOUT:
+                  x.innerHTML = "The request to get user location timed out."
+                  break;
+              case error.UNKNOWN_ERROR:
+                  x.innerHTML = "An unknown error occurred."
+                  break;
+          }
+      }
+    </script>
+    <div id="map1" style="width:100%;height:400px;"> </div><p> </p>
+    <script>
+      function myMap() {
+      var map= {
+        center:new google.maps.LatLng(26,-80),
+         zoom:9,
+       mapTypeId: google.maps.MapTypeId.HYBRID
+      };
 	  </article>
     </main>
+    var mapM=new google.maps.Map(document.getElementById("map1"),mapMiami);
+    </script>
 
     <footer id="footer">
       <p></p>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script type="text/javascript" src="https://github.com/RosanaSincere/Project2/blob/master/MapData/mapdata.js"></script>
-<script  type="text/javascript" src="https://github.com/RosanaSincere/Project3/blob/master/contact.html"></script>
   </body>
 </html>
