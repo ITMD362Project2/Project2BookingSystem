@@ -10,20 +10,19 @@
   <body id="body">
     <header id="header">
       <h1>Find the nearest Location</h1>
-      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
       <script type="text/javascript" src="Project2/zip_search/zip_search/mapdata.js"></script>
   <script  type="text/javascript" src="Project2/zip_search/zip_search/usmap.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA906jzwtnuC-NhutysGF95o0sn0_dFirk&callback=initMap"
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJHqM95J8cSJBC9UJriQfRssT5n4pDsNo&callback=myMap"
     type="text/javascript"></script>
     </header>
-    <main id="content">
+  <!--  <main id="content">
       <article id="primary">
           <h2>Please select Your State:</h2>
           <div id="map"></div>
           <form action="#null" method="get">
-          <!--  <input type="list" id="city" name="city"> -->
+           <input type="list" id="city" name="city">
 
-        <!--    <select name="state">
+           <select name="state">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AS">American Samosa</option>
@@ -77,9 +76,8 @@
           </form>
         <!- <div id="map"></div>
         **script for map -->
-        <p id="demo">Click the button to get your position.</p>
 
-        <button onclick="getLocation()">find me</button>
+        <button onclick="getLocation()"> Click here to find a theater near you:</button>
 
         <div id="mapholder"></div>
 
@@ -122,8 +120,6 @@
     <script>
       function myMap() {
       var map= {
-        center:new google.maps.LatLng(26,-80),
-         zoom:9,
        mapTypeId: google.maps.MapTypeId.HYBRID
       };
 	  </article>
@@ -132,6 +128,7 @@
     </script>
 
     <footer id="footer">
+
       <p></p>
     </footer>
   </body>
