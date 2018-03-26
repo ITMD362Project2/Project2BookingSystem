@@ -87,7 +87,7 @@ img.error-fixed {
 }*/
 
 .dot {
-  text-align:center;
+  position:center;
   cursor: pointer;
   height: 15px;
   width: 15px;
