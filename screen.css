@@ -1,0 +1,106 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+  background-color:#b3b3ff;
+}
+
+#slideshow{
+ /* margin: 3.125em /*50px div 16*/
+  max-width:75em; /*1200px div 16*/
+  height: 37.5em; /*600px div 16*/
+  position: relative;
+  margin: auto;
+}
+
+#posters{
+  display:none;
+}
+
+#slideshow img{
+  position:absolute;
+  max-width:75em;
+  height:37.5em;
+}
+/*img.error-not-fixed, img.error-fixed{
+    display:inline-block;
+    position:relative;
+    width:128px;
+    height:128px;
+    border:15px solid #fff;
+    border-radius:1px;
+    margin:0px;
+    background:#fff;
+}
+img.error-fixed {
+    background: #CCC url(blackpanther.PNG) 0 0 no-repeat;
+    text-indent: -9999px;
+    border: 15px solid #fff;
+    color: transparent;
+    -webkit-appearance: none;
+}*/
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2f2f2f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+div{
+  text-align:center;
+  padding-top: 0.625em /*10px div 16*/
+}
+
+footer{
+  
+}
