@@ -46,6 +46,6 @@ $("#slideshow > figure:gt(0)").hide();
   $('#slideshow > figure:first')
     .fadeOut(1000)
     .next('figure').fadeIn(1000)
-    .end().appendTo('#slideshow');},  3000);
+    .end().appendTo('#slideshow');},  5000);
     
 })
