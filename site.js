@@ -39,7 +39,7 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }*/
 
-function(){
+$(function(){
 $("#slideshow > figure:gt(0)").hide();
 
   setInterval(function() { 
@@ -48,4 +48,4 @@ $("#slideshow > figure:gt(0)").hide();
     .next('figure').fadeIn(1000)
     .end().appendTo('#slideshow');},  3000);
     
-}
+})
