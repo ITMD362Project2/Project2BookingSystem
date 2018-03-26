@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="screen.css"/>
 </head>
+
 <body>
   <nav>
     <h1>Navigation</h1>
@@ -14,37 +15,24 @@
         <li><a href="getTickets.html">Get Tickets</a></li>
       </ul>
   </nav>
-  <section id = "content">
-    <h1>In Theatres</h1>
-    <article id ="slideshow">
-      
-          <figure class ="posters"><img src = "Photos/blackpanther.jpg" /> </figure>
-        
-        
-          <figure class ="posters"><img src = "Photos/redsparrow.jpg"/></figure>
-        
-       
-          <figure class ="posters"><img src = "Photos/wrinkleIntime.jpg"/></figure>
-        
-        
-          <figure class="posters"><img src = "Photos/loveSimon.jpg" /></figure>
-        
-        
-          <figure class="posters"><img src = "Photos/tombRaider.jpg"/></figure>
-        
-      
-      <div >
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-        <span class="dot" onclick="currentSlide(4)"></span> 
-        <span class="dot" onclick="currentSlide(5)"></span> 
-      </div>
-    </article>
-
-  </section>
   <main>
-
+    <section id = "content">
+      <h1>In Theatres</h1>
+      <article id ="slideshow">
+        <figure class ="posters"><img src = "Photos/blackpanther.jpg" /></figure>
+        <figure class ="posters"><img src = "Photos/redsparrow.jpg"/></figure>
+        <figure class ="posters"><img src = "Photos/wrinkleIntime.jpg"/></figure>
+        <figure class="posters"><img src = "Photos/loveSimon.jpg" /></figure>
+        <figure class="posters"><img src = "Photos/tombRaider.jpg"/></figure>
+      </article>
+      <div >
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+      </div>
+    </section>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src ="site.js"> </script>
