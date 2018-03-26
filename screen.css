@@ -53,8 +53,8 @@ table {
 
 #slideshow{
  /* margin: 3.125em /*50px div 16*/
-  max-width:62.5em; /*1000px div 16*/
-  height: 18.75em; /*300px div 16*/
+  max-width:75em; /*1200px div 16*/
+  height: 37.5em; /*600px div 16*/
   position: relative;
   margin: auto;
 }
