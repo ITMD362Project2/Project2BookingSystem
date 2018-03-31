@@ -52,9 +52,9 @@ $('#zip').on('keyup', function(e) {
       statusCode: {
         200: function(data) {
           $(".address").append("DUO Theater Cinema ")
-          $(".address").append(data.places[0]["place name"] + ", ")
+          $(".address").append(data.places[0]["place name"] + " ")
           $(".address").append(data.places[0]["state abbreviation"])
-
+//.replace
         },
         404: function() {
           $('label[for="zip"]').append(' <b>Are you sure about that ZIP code?</b>');

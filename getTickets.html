@@ -6,58 +6,63 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="screen.css" />
+    <link rel="stylesheet" media="screen" href="screen2.css" />
   </head>
 
   <body id="body">
 
     <header id="header">
-      <h1>Find the nearest Location</h1>
+      <h1>Find Your Nearest Theater: </h1>
     </header>
 
-     <!-- this is to get location by geolocation-->
+  <!--   this is to get location by geolocation -->
     <p id="geo"> click the button to find theaters near you:
-    <button onclick="getLocation()"> Find Location</button>
+    <button onclick="getLocation()" id="locate"> locate</button>
     <div id="mapholder"></div>
     <script>
-      var x = document.getElementById("geo");
+    var x = document.getElementById("geo");
 
-      function getLocation() {
-          if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(showPosition, showError);
-          } else {
-              x.innerHTML = "Geolocation is not supported by this browser.";
-          }
-      }
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
 
-      function showPosition(position) {
-          var latlon = position.coords.latitude + "," + position.coords.longitude;
-          var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-          +latlon+"&zoom=14&size=400x300&key=AIzaSyA906jzwtnuC-NhutysGF95o0sn0_dFirk";
-          document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-      }
+    function showPosition(position) {
+        var latlon = position.coords.latitude + "," + position.coords.longitude;
+        var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+        +latlon+"&zoom=14&size=400x300&key=AIzaSyA906jzwtnuC-NhutysGF95o0sn0_dFirk";
+        document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+    }
 
-      function showError(error) {
-          switch(error.code) {
-              case error.PERMISSION_DENIED:
-                  x.innerHTML = "User denied the request for Geolocation."
-                  break;
-              case error.POSITION_UNAVAILABLE:
-                  x.innerHTML = "Location information is unavailable."
-                  break;
-              case error.TIMEOUT:
-                  x.innerHTML = "The request to get user location timed out."
-                  break;
-              case error.UNKNOWN_ERROR:
-                  x.innerHTML = "An unknown error occurred."
-                  break;
-          }
-      }
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+        }
+    }
 
  </script>
 
+ <div id="map">
+
+ </div>
+
 <!-- This is to get location by zip code -->
     <form id="location" method="get" action="#null">
-      <label for="zip">Enter you zipcode: </label>
+      <label for="zip">Enter you zipcode: </label><p></p>
       <input name="zip" id="zip" type="text" pattern="[0-9]*" />
     </form>
     <div class="address">
