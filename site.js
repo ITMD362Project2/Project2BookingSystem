@@ -36,18 +36,11 @@ $("#slideshow > figure:gt(0)").hide();
 
 })
 
-
-
 //Search by zip Code
 var loadFX = function() {
   $('html').addClass('fx');
 }
 setTimeout(loadFX, 500);
-
-// Focus inner inputs when li is clicked/tapped
-$('.inputs li').on('click', function() {
-  $(this).find('input').focus();
-});
 
 $('#zip').on('keyup', function(e) {
   // On a keyup event, ...
@@ -58,12 +51,10 @@ $('#zip').on('keyup', function(e) {
       url: 'http://api.zippopotam.us/us/' + zip,
       statusCode: {
         200: function(data) {
-          $(".address").append(data.places[0]["place name"])
+          $(".address").append("DUO Theater Cinema ")
+          $(".address").append(data.places[0]["place name"] + " ")
           $(".address").append(data.places[0]["state abbreviation"])
-
-
-          //$('#city').val(data.places[0]["place name"]);
-          //$('#state').val(data.places[0]["state abbreviation"]);
+//.replace
         },
         404: function() {
           $('label[for="zip"]').append(' <b>Are you sure about that ZIP code?</b>');
