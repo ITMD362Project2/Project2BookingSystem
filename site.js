@@ -33,9 +33,7 @@ $("#slideshow > figure:gt(0)").hide();
     .fadeOut(1000)
     .next('figure').fadeIn(1000)
     .end().appendTo('#slideshow');},  5000);
-
-})
-
+});
 
 //search by Geolocation
 var x = document.getElementById("geo");
@@ -50,36 +48,31 @@ function getLocation() {
 
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&key=AIzaSyA906jzwtnuC-NhutysGF95o0sn0_dFirk";
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyA906jzwtnuC-NhutysGF95o0sn0_dFirk";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation."
+            x.innerHTML = "User denied the request for Geolocation.";
             break;
         case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable."
+            x.innerHTML = "Location information is unavailable.";
             break;
         case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out."
+            x.innerHTML = "The request to get user location timed out.";
             break;
         case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred."
+            x.innerHTML = "An unknown error occurred.";
             break;
     }
 }
 
-
-
-
-
 //Search by zip Code
 var loadFX = function() {
   $('html').addClass('fx');
-}
+};
 setTimeout(loadFX, 500);
 
 $('#zip').on('keyup', function(e) {
@@ -91,9 +84,9 @@ $('#zip').on('keyup', function(e) {
       url: 'http://api.zippopotam.us/us/' + zip,
       statusCode: {
         200: function(data) {
-          $(".address").append("DUO Theater Cinema ")
-          $(".address").append(data.places[0]["place name"] + " ")
-          $(".address").append(data.places[0]["state abbreviation"])
+          $(".address").append("DUO Theater Cinema ");
+          $(".address").append(data.places[0]["place name"] + " ");
+          $(".address").append(data.places[0]["state abbreviation"]);
 //.replace
         },
         404: function() {
