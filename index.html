@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
-  <title>DUO Theatres</title>
+  <title>DUO Theaters</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="screen.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <h1>Navigation</h1>
-      <ul>
-        <li><a href="movies.html">Movies</a></li>
-        <li><a href="getTickets.html">Get Tickets</a></li>
-      </ul>
-  </nav>
+  <!-- nav bar-->
+  <nav class="nav">
+    <img src="Photos/logo4.1.png" alt="DUO Theaters" class="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Movies/movies.html">Movies Out Now</a></li>
+          <li><a href="getTickets.html">Get Tickets</a></li>
+        </ul></nav>
+    <!-- slideshow-->
   <main>
     <section id = "content">
-      <h1>In Theatres</h1>
+      <h1>In Theaters</h1>
       <article id ="slideshow">
-        <figure class ="posters"><img src = "Photos/blackpanther.jpg" /></figure>
-        <figure class ="posters"><img src = "Photos/redsparrow.jpg" width="1150"/></figure>
-        <figure class ="posters"><img src = "Photos/wrinkleIntime.jpg" width="1150" /></figure>
-        <figure class="posters"><img src = "Photos/loveSimon.jpg" width="1150"/></figure>
-        <figure class="posters"><img src = "Photos/tombRaider.jpg"width="1150"/></figure>
+        <figure class ="posters"><img src = "Photos/blackpanther.jpg" alt="Black Panther"/></figure>
+        <figure class ="posters"><img src = "Photos/redsparrow.jpg" alt="Red Sparrow" width="1150"/></figure>
+        <figure class ="posters"><img src = "Photos/wrinkleIntime.jpg" alt="A Wrinkle In Time" width="1150" /></figure>
+        <figure class="posters"><img src = "Photos/loveSimon.jpg" alt="Love, Simon" width="1150"/></figure>
+        <figure class="posters"><img src = "Photos/tombRaider.jpg" alt="Tomb Raider" width="1150"/></figure>
       </article>
       <div >
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-          <span class="dot" onclick="currentSlide(4)"></span> 
-          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
       </div>
     </section>
   </main>
