@@ -90,7 +90,7 @@ h1{
 
 #pricing li{
   color:#f2f2f2;
-  background-color:#0d0d0d;
+  background-color:#4d4d4d;
   display:inline-block;
   padding-left:2em;
   padding-right: 2em;
@@ -98,6 +98,7 @@ h1{
   padding-bottom:1em;
   margin-left: 0.5em;
   margin-right:0.5em;
+  margin-top: 0.5em;
   border-style:inset;
   border-width:thin;
   border-radius:15px;
