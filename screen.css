@@ -109,6 +109,16 @@ h1{
   text-align:center;
 }
 
+#tickets{
+  text-align:center;
+}
+
+#tickets p{
+  font-family: sans-serif;
+  font-size: 1em;
+	color:#0d0d0d; ;
+}
+
 li{
 	padding-bottom: 0.5em;
 }
