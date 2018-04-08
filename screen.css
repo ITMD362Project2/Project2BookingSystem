@@ -120,6 +120,12 @@ h1{
   padding-bottom:0.5em;
 }
 
+#tickets submit{
+  margin-top:0.5em;
+  width: 130%;
+  height: 105%;
+}
+
 li{
 	padding-bottom: 0.5em;
 }
