@@ -47,11 +47,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
- /*end reset*/
+}/*end reset*/
 
 /* general */
+
 html{
   /* old background-color:#b3b3ff;  i like #660066, but #699fA1 is pretty*/
 	background-color: #006699;
@@ -62,7 +61,7 @@ html{
 	color: #ffff81;
 }
 
-header{
+.header{
   font:merriweather sans;
   text-align: center;
   padding-top: 2em;
@@ -82,7 +81,6 @@ h1{
 	color: white;
 }
 
-<<<<<<< HEAD
 h3{
 	text-align: center;
 }
@@ -91,7 +89,8 @@ footer{
 	text-align: center;
 	padding-top: 2em;
 }
-=======
+
+/*css for new page*/
 #pricing h1{
   text-align: center;
   font-family: sans-serif;
@@ -113,7 +112,7 @@ footer{
   border-style:inset;
   border-width:thin;
   border-radius:15px;
-  
+
 }
 
 #pricing ol{
@@ -127,7 +126,7 @@ footer{
 #tickets p{
   font-family: sans-serif;
   font-size: 1.5em;
-	color:#0d0d0d; 
+	color:#0d0d0d;
   padding-bottom:0.5em;
 }
 
@@ -136,27 +135,28 @@ footer{
   width: 9em;
   height: 3em;
 }
-
->>>>>>> 2c116bdd2ddb525d4430b20f1edd06baf604a541
+/* end new page css */
+/* back to general */
 li{
 	padding-bottom: 0.5em;
+	display: inline-grid;
 }
 
 nav{
-	padding-left: 0.5em;
+	padding-left: 3em;
   padding-top: 0.5em;
-	text-align: left;
+	text-align: center;
 	list-style-type: none;
 	margin: 1em;
 	overflow: hidden;
-<<<<<<< HEAD
 	color: #FFFF81;
 	display: inline-block;
-=======
-	color: white;
-	display: inline;
->>>>>>> 2c116bdd2ddb525d4430b20f1edd06baf604a541
- 	vertical-align: top;
+ 	vertical-align: middle;
+}
+
+li.nav{
+	text-align: center;
+	padding-right: 1em;
 }
 
 p{
@@ -167,17 +167,15 @@ p{
   font-size: 1em;
 	color: black;
 }
-
+/* end general */
 /*Logo*/
-#logo{
+.logo{
 	display: block;
-	 margin-left: auto;
-	 margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 80%;
-	text-align: center;
-	/*font-size: 3em;
 	float: right;
-	padding-left: 5em;*/
+	padding-left: 17em;
 }
 
 /* for links */
@@ -264,11 +262,30 @@ div{
   padding-bottom: 1em;
 }
 
-#nearest{
+#address{
 	display: block;
-	padding-bottom: 2em;
+	font-size: 1em;
+	white-space: pre;
 }
 
+.showtime{
+	border: none;
+	background-color: #0099CC;
+	font-size: 1.1em;
+	cursor: pointer;
+	padding: 0.7em;
+	border-radius: 0.4em
+  -webkit-transition-duration: 0.4s;
+	color: white;
+	/* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.showtime:hover {
+  background-color: #FFFF81;
+	color: black;
+}
 /* css for movies pages */
 li.movies{
 	font-size: 1.5em;
@@ -295,6 +312,6 @@ footer {
    position:absolute;
    bottom:0;
    width:100%;
-   height:1em; 
- 
+   height:1em;
+padding-top: 2em;
 }

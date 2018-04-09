@@ -86,10 +86,11 @@ $('#zip').on('keyup', function(e) {
       url: 'http://api.zippopotam.us/us/' + zip,
       statusCode: {
         200: function(data) {
-          $("#address").append("DUO Theater Cinema ");
-          $("#address").append(data.places[0]["place name"] + " ");
+          $("#address").prepend("DUO Theater Cinema ");
+          $("#address").append(data.places[0]["place name"] + ", ");
           $("#address").append(data.places[0]["state abbreviation"]);
-//.replace
+
+            //if the zipcode is invalid
         },
         404: function() {
           $('label[for="zip"]').append(' <b>Are you sure about that ZIP code?</b>');
