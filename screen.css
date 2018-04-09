@@ -62,16 +62,17 @@ html{
 }
 
 .header{
-  font:merriweather sans;
+  font-family: sans-serif;
   text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin-bottom:3em;
-  color:#f2f2f2;
-  background-color:#0d0d0d;
-  border-style:inset;
-  border-width:thin;
-  border-radius:15px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0.5em;
+  background-color: black;
+  border-style: inset;
+  border-width: thin;
+  border-radius: 0.4em;
+	font-size: 1.5em;
+	color: white;
 }
 h1{
   text-align: center;
@@ -139,24 +140,22 @@ footer{
 /* back to general */
 li{
 	padding-bottom: 0.5em;
-	display: inline-grid;
 }
 
 nav{
-	padding-left: 3em;
   padding-top: 0.5em;
 	text-align: center;
 	list-style-type: none;
 	margin: 1em;
 	overflow: hidden;
 	color: #FFFF81;
-	display: inline-block;
- 	vertical-align: middle;
+	display: inline;
 }
 
 li.nav{
 	text-align: center;
 	padding-right: 1em;
+	display: inline-grid;
 }
 
 p{
@@ -174,8 +173,8 @@ p{
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 80%;
-	float: right;
-	padding-left: 17em;
+	float: center;
+	padding-left: 1em;
 }
 
 /* for links */
@@ -309,8 +308,7 @@ li.movies{
 }
 
 footer {
-   position:absolute;
-   bottom:0;
+   position: absolute;
    width:100%;
    height:1em;
 padding-top: 2em;

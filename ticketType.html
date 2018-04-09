@@ -9,30 +9,38 @@
   </head>
   <body>
     <main>
-    <header> Select Your Tickets</header>
-    <section id="pricing">
-      <h1>Pricing</h1>
-      <ol>
-        <li> Adults: $12.95</li>
-        <li> Children: $6.95 </li>
-      </ol>
-    </section>
-    <section id="tickets">
-     <form action="#null" method="get" id="ticketSelection">
-        <p>Choose Your Tickets:</p>
+      <nav class="nav">
+        <img src="Photos/logo4.1.png" alt="DUO Theaters" class="logo">
+          <ul>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="Movies/movies.html">Movies Out Now</a></li>
+            <li class="nav"><a href="location.html">Get Tickets</a></li>
+          </ul>
+      </nav>
+      <header class="header"> Select Your Tickets</header>
+      <section id="pricing">
+        <h1>Pricing</h1>
         <ol>
-          <li>
-            <label for="adults">Number of Adults</label>
-            <input placeholder="1" type="number" id="ad" name="adult"/>
-          </li>
-          <li>
-            <label for="children">Number of Children</label>
-            <input placeholder="1" type="number" id="ch" name="child"/>
-          </li>
+          <li> Adults: $12.95</li>
+          <li> Children: $6.95 </li>
         </ol>
-        <input type="submit" id="button1" value="Continue" />
-      </form>
-    </section>
+      </section>
+      <section id="tickets">
+       <form action="#null" method="get" id="ticketSelection">
+          <p>Choose Your Tickets:</p>
+          <ol>
+            <li>
+              <label for="adults">Number of Adults</label>
+              <input placeholder="1" type="number" id="ad" name="adult"/>
+            </li>
+            <li>
+              <label for="children">Number of Children</label>
+              <input placeholder="1" type="number" id="ch" name="child"/>
+            </li>
+          </ol>
+          <input type="submit" id="button1" value="Continue" />
+        </form>
+      </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src ="site.js"> </script>
