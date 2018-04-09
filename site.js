@@ -70,6 +70,10 @@ function showError(error) {
 }
 
 //Search by zip Code
+
+$(document).ready(function(){
+  $("#showtime").hide();
+
 var theater = function() {
   $('html').addClass('fx');
 };
@@ -90,8 +94,12 @@ $('#zip').on('keyup', function(e) {
           $("#address").append(data.places[0]["place name"] + ", ");
           $("#address").append(data.places[0]["state abbreviation"]);
 
-            //if the zipcode is invalid
+          //to make the showtimes appear
+            $("#showtime").show();
+            });
+          });
         },
+              //if the zipcode is invalid
         404: function() {
           $('label[for="zip"]').append(' <b>Are you sure about that ZIP code?</b>');
         }
