@@ -70,23 +70,25 @@ function showError(error) {
 }
 
 //Search by zip Code
-var loadFX = function() {
+var theater = function() {
   $('html').addClass('fx');
 };
-setTimeout(loadFX, 500);
+setTimeout(theater, 500);
+
+$('.inputs li').on('click', function() {
+  $(this).find('input').focus();
+});
 
 $('#zip').on('keyup', function(e) {
-  // On a keyup event, ...
   var zip = $(this).val();
   if (zip.length === 5) {
-    $('label b').remove();
     $.ajax({
       url: 'http://api.zippopotam.us/us/' + zip,
       statusCode: {
         200: function(data) {
-          $(".address").append("DUO Theater Cinema ");
-          $(".address").append(data.places[0]["place name"] + " ");
-          $(".address").append(data.places[0]["state abbreviation"]);
+          $("#address").append("DUO Theater Cinema ");
+          $("#address").append(data.places[0]["place name"] + " ");
+          $("#address").append(data.places[0]["state abbreviation"]);
 //.replace
         },
         404: function() {

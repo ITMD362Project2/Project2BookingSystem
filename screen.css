@@ -73,8 +73,10 @@ h1{
 h3{
 	text-align: center;
 }
+
 footer{
 	text-align: center;
+	padding-top: 2em;
 }
 li{
 	padding-bottom: 0.5em;
@@ -195,6 +197,11 @@ div{
   padding-left: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+#nearest{
+	display: block;
+	padding-bottom: 2em;
 }
 
 /* css for movies pages */
