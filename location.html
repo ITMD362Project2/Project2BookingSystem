@@ -33,26 +33,30 @@ get location by geolocation
 <!-- get location by zip code -->
   <section>
     <form id="location" method="get" action="#null">
-      <label for="zip">Enter you zipcode: </label><p></p>
+      <label for="zip" class="zipcode">Enter you zipcode: </label><p></p>
       <input name="zip" id="zip" type="text" pattern="[0-9]*" />
     </form>
 
     <p> Your nearest UNO Theater: </p>
     <div id="address">
-
      </div>
 
      <div id="showtime">
+
       <p> choose a showtime: </p>
-      <label for="10am">
-        <span><input type="submit" name="submit" class="showtime" value="10:00 am"
-           onclick="window.location.href='ticketType.html'"/></span></label>
-      <label for="250pm">
-        <span><input type="submit" name="submit" class="showtime" value="2:50 pm"
-           onclick="window.location.href='ticketType.html'"/></span></label>
-      <label for="515pm">
-        <span><input type="submit" name="submit" class="showtime" value="5:15 pm"
-           onclick="window.location.href='ticketType.html'"/></span></label>
+
+      <label for="10am"  id="showtime1">
+        <span></span>
+      </label>
+
+      <label for="250pm" id="showtime2">
+        <span></span>
+      </label>
+
+      <label for="515pm" id="showtime3">
+        <span></span>
+      </label>
+
      </div>
    </section>
 

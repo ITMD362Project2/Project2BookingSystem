@@ -71,15 +71,15 @@ function showError(error) {
 
 //Search by zip Code
 
-$(document).ready(function(){
-  $("#showtime").hide();
+//$(document).ready(function(){
+//  $("#showtime").hide();
 
 var theater = function() {
   $('html').addClass('fx');
 };
 setTimeout(theater, 500);
 
-$('.inputs li').on('click', function() {
+$('.zipcode').on('click', function() {
   $(this).find('input').focus();
 });
 
@@ -93,12 +93,15 @@ $('#zip').on('keyup', function(e) {
           $("#address").prepend("DUO Theater Cinema ");
           $("#address").append(data.places[0]["place name"] + ", ");
           $("#address").append(data.places[0]["state abbreviation"]);
-
+          //$("#showtime1").append(<input type="submit" name="submit" class="showtime" value="10:00 am"
+            // onclick="window.location.href='ticketType.html'"/>)
+          //$("#showtime2").append(<input type="submit" name="submit" class="showtime" value="2:50 pm"
+            // onclick="window.location.href='ticketType.html'"/>)
+          //$("#showtime3").append(<input type="submit" name="submit" class="showtime" value="5:15 pm"
+            // onclick="window.location.href='ticketType.html'"/>)
           //to make the showtimes appear
-            $("#showtime").show();
-            });
-          });
-        },
+          //  $("#showtime").show();
+          },
               //if the zipcode is invalid
         404: function() {
           $('label[for="zip"]').append(' <b>Are you sure about that ZIP code?</b>');
