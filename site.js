@@ -71,8 +71,9 @@ function showError(error) {
 
 //Search by zip Code
 
-//$(document).ready(function(){
-//  $("#showtime").hide();
+$(document).ready(function(){
+  $("#showtime").hide();
+});
 
 var theater = function() {
   $('html').addClass('fx');
@@ -100,7 +101,7 @@ $('#zip').on('keyup', function(e) {
           //$("#showtime3").append(<input type="submit" name="submit" class="showtime" value="5:15 pm"
             // onclick="window.location.href='ticketType.html'"/>)
           //to make the showtimes appear
-          //  $("#showtime").show();
+           $("#showtime").show();
           },
               //if the zipcode is invalid
         404: function() {
