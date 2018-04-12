@@ -152,14 +152,14 @@ p{
 
 fieldset{
   border-style: solid;
-  border-width: thin; 
-  height: 6.25em; 
-  border-color: #595959;
+  border-width: medium; 
+  height: 7.5em; 
+  border-color: black;
 }
 
 legend{
   margin-bottom: 0px; 
-  font-size: 12px; 
+  font-size: 1.5em; 
   font-weight: bold;
   color: #1f497d;
 }
