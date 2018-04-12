@@ -309,8 +309,9 @@ li.movies{
  .prev{
 	 text-align: center;
 	 padding-top: 2em;
-	 font-size: 1em;
+	 font-size: 1.2em;
 	 text-decoration: none;
+	 color: white;
  }
 
 .back{
@@ -325,7 +326,11 @@ li.movies{
 	/* Safari */
 	transition-duration: 0.2s;
 	cursor: pointer;
+}
 
+.back:hover{
+background-color: #FFFF81;
+color: black;
 }
 
 footer {
