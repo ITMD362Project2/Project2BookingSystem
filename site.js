@@ -94,12 +94,7 @@ $('#zip').on('keyup', function(e) {
           $("#address").prepend("DUO Theater Cinema ");
           $("#address").append(data.places[0]["place name"] + ", ");
           $("#address").append(data.places[0]["state abbreviation"]);
-          //$("#showtime1").append(<input type="submit" name="submit" class="showtime" value="10:00 am"
-            // onclick="window.location.href='ticketType.html'"/>)
-          //$("#showtime2").append(<input type="submit" name="submit" class="showtime" value="2:50 pm"
-            // onclick="window.location.href='ticketType.html'"/>)
-          //$("#showtime3").append(<input type="submit" name="submit" class="showtime" value="5:15 pm"
-            // onclick="window.location.href='ticketType.html'"/>)
+
           //to make the showtimes appear
            $("#showtime").show();
           },
