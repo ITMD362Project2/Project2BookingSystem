@@ -167,6 +167,22 @@ p{
 	color: black;
 }
 /* end general */
+
+fieldset{
+  border-style: solid;
+  border-width: medium; 
+  height: 8 em; 
+  border-color: #262626;
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+}
+
+legend{
+  margin-bottom: 0px; 
+  font-size: 1.5em; 
+  font-weight: bold;
+  color: #1f497d;
+}
 /*Logo*/
 .logo{
 	display: block;
