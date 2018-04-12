@@ -1,13 +1,13 @@
 /*payment page submit*/
 
-$('#form').on('submit',
+$('#payform').on('submit',
   function(e)
     {
       console.log('The form was submitted.');
-       alert("Thank you!);
+       alert("Thank you!");
         e.preventDefault();
     }
- ))
+ )
 
 
 /*Displays picture upon click of dots*/
