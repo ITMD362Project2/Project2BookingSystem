@@ -1,6 +1,6 @@
 /*payment page submit*/
 
-$('#form').on('submit',
+$('#payform').on('submit',
   function(e)
     {
       console.log('The form was submitted.');
