@@ -313,6 +313,21 @@ li.movies{
 	 text-decoration: none;
  }
 
+.back{
+	border: none;
+	background-color: #0099CC;
+	font-size: 1.1em;
+	cursor: pointer;
+	padding: 0.7em;
+	border-radius: 0.4em
+	-webkit-transition-duration: 0.4s;
+	color: white;
+	/* Safari */
+	transition-duration: 0.2s;
+	cursor: pointer;
+
+}
+
 footer {
   position: absolute;
   width:100%;
