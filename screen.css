@@ -153,8 +153,8 @@ p{
 fieldset{
   border-style: solid;
   border-width: medium; 
-  height: 7.5em; 
-  border-color: black;
+  height: 8 em; 
+  border-color: #262626;
 }
 
 legend{
