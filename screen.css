@@ -155,6 +155,7 @@ fieldset{
   border-width: medium; 
   height: 8 em; 
   border-color: #262626;
+  margin-top:0.5em;
   margin-bottom: 0.5em;
 }
 
