@@ -7,13 +7,26 @@
     <link rel="stylesheet" media="screen" href="screen.css"/>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
   </head>
-  <body onload="costFunction()">
+  <body>
     <header>Confirm Purchase</header>
     <section id="price">
       <h1> Total: </h1>
       <div id="tot"></div>
       <script>
+        $('#ticketSelection').on('submit',
+          function costFunction()
+      { 
+        /*getting values entered by user for number of tickets*/
+        var adultT=document.getElementById("ad").value;
+        var childT=document.getElementById("ch").value;
+        
+        /*Determing total cost of tickets*/
+        var total= 12.95*adultT + 6.95*childT;
+        console.log('The total is:'+total);
         document.getElementById("tot").innerHTML = total;
+      }
+  
+  )
       </script>
     </section>
     <section id ="form">
