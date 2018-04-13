@@ -25,7 +25,12 @@ $('#payform').on('submit',
   
   )
   
-
+  /*Displaying total on payment page*/
+    var t = document.getElementById(tot);
+    if(typeof t !== 'undefined' && t !== null) {
+    document.getElementById(tot).innerHTML = total.toString();
+      }
+   
 
 
 /*Displays picture upon click of dots*/
