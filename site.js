@@ -8,6 +8,22 @@ $('#payform').on('submit',
         e.preventDefault();
     }
  )
+ 
+ /*Calculating cost of tickets*/
+ $('#ticketSelection').on('submit',
+    function()
+      { 
+        /*getting values entered by user for number of tickets*/
+        var adultT=document.getElementById("ad").value;
+        var childT=document.getElementById("ch").value;
+        
+        /*Determing total cost of tickets*/
+        var total= 12.95*adultT + 6.95*childT;
+        console.log('The total is:'+total);
+        document.getElementById("tot").innerHTML = total;
+      }
+  
+  )
 
 
 /*Displays picture upon click of dots*/
