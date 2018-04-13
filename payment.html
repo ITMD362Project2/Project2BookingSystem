@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link rel="stylesheet" media="screen" href="screen.css"/>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
   <body>
     <header>Confirm Purchase</header>
     <section id="price">
       <h1> Total: </h1>
       <div id="tot"></div>
+      <script>
+        function updateHTML(tot, total) {
+          var t = document.getElementById(tot);
+          if(typeof t !== 'undefined' && t !== null) {
+          document.getElementById(tot).innerHTML = total.toString();
+        }
+      }
+      </script>
     </section>
     <section id ="form">
       <form action="#null" method="get" id="payform">
@@ -72,11 +79,11 @@
         <button type="submit" id="pay">Pay Now</button>
       </form>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src ="site.js"> </script>
     <footer>
       Site by Sarina Stoker and Rosana Sincere
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src ="site.js"> </script>
   </body>
   
 </html>
