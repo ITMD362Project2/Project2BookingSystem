@@ -36,7 +36,7 @@ $('#payform').on('submit',
         document.getElementById("tot").innerHTML = total.toString();
       } 
   }
-}
+
 
 
 /*Displays picture upon click of dots*/
