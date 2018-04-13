@@ -11,7 +11,7 @@ $('#payform').on('submit',
  
  /*Calculating cost of tickets*/
  $('#ticketSelection').on('submit',
-    function()
+    function costFunction()
       { 
         /*getting values entered by user for number of tickets*/
         var adultT=document.getElementById("ad").value;
