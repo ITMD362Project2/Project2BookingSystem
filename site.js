@@ -8,29 +8,29 @@ $('#payform').on('submit',
         e.preventDefault();
     }
  )
- 
+
  /*Calculating cost of tickets*/
  $('#ticketSelection').on('submit',
     function costFunction()
-      { 
+      {
         /*getting values entered by user for number of tickets*/
         var adultT=document.getElementById("ad").value;
         var childT=document.getElementById("ch").value;
-        
+
         /*Determing total cost of tickets*/
         var total= 12.95*adultT + 6.95*childT;
         console.log('The total is:'+total);
-        
+
         /*Displaying total on payment page*/
       var t = document.getElementById(tot);
       if(typeof t !== 'undefined' && t !== null) {
       document.getElementById(tot).innerHTML = total.toString();
       }
-        
+
       }
-  
+
   )
-   
+
 
 
 /*Displays picture upon click of dots*/
@@ -71,7 +71,7 @@ $("#slideshow > figure:gt(0)").hide();
 });
 
 //search by Geolocation
-var x = document.getElementById("geo");
+/*var x = document.getElementById("geo");
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -102,7 +102,7 @@ function showError(error) {
             x.innerHTML = "An unknown error occurred.";
             break;
     }
-}
+}*/
 
 //Search by zip Code
 
