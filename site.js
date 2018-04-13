@@ -23,26 +23,19 @@ $('#payform').on('submit',
         total= 12.95*adultT + 6.95*childT;
         console.log('The total is:'+total);
 
-        function displayCost()
-          {
-            /*Displaying total on payment page*/
-            var t = document.getElementById("tot");
-            if(typeof t !== 'undefined' && t !== null) {
-            document.getElementById("tot").innerHTML = total.toString();
-            } 
-          }
+        
 
       }
     )
 
-    /*function displayCost()
+    function displayCost()
   {
     /*Displaying total on payment page
     var t = document.getElementById("tot");
       if(typeof t !== 'undefined' && t !== null) {
         document.getElementById("tot").innerHTML = total.toString();
       } 
-  }*/
+  }
 
 
 
