@@ -12,6 +12,14 @@
     <section id="price">
       <h1> Total: </h1>
       <div id="tot"></div>
+      <script>
+        function updateHTML(tot, total) {
+          var t = document.getElementById(tot);
+          if(typeof t !== 'undefined' && t !== null) {
+          document.getElementById(tot).innerHTML = value;
+        }
+      }
+      </script>
     </section>
     <section id ="form">
       <form action="#null" method="get" id="payform">
