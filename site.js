@@ -31,6 +31,12 @@ $('#payform').on('submit',
 
     function displayCost()
   {
+    /*getting values entered by user for number of tickets*/
+        var adultT=document.getElementById("ad").value;
+        var childT=document.getElementById("ch").value;
+
+        /*Determing total cost of tickets*/
+        total= 12.95*adultT + 6.95*childT;
     /*Displaying total on payment page*/
     var t = document.getElementById("tot");
       if(typeof t !== 'undefined' && t !== null) {
