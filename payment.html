@@ -7,10 +7,14 @@
     <link rel="stylesheet" media="screen" href="screen.css"/>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
   </head>
-  <body>
+  <body onload="costFunction()">
     <header>Confirm Purchase</header>
     <section id="price">
       <h1> Total: </h1>
+      <script>
+      document.write(total);
+      </script>
+      
       <div id="tot"></div>
     </section>
     <section id ="form">
