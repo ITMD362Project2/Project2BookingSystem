@@ -11,7 +11,7 @@ $('#payform').on('submit',
 
  /*Calculating cost of tickets*/
  
- var total;
+ var total=0;
  $('#ticketSelection').on('submit',
     function costFunction()
       {
@@ -27,13 +27,15 @@ $('#payform').on('submit',
 
       }
     )
-function displayCost()
-{
-  /*Displaying total on payment page*/
-  var t = document.getElementById("tot");
-    if(typeof t !== 'undefined' && t !== null) {
-      document.getElementById("tot").innerHTML = total.toString();
-      }
+
+    function displayCost()
+  {
+    /*Displaying total on payment page*/
+    var t = document.getElementById("tot");
+      if(typeof t !== 'undefined' && t !== null) {
+        document.getElementById("tot").innerHTML = total.toString();
+      } 
+  }
 }
 
 
