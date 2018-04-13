@@ -30,7 +30,7 @@ $('#payform').on('submit',
 
     function displayCost()
   {
-    /*Displaying total on payment page
+    /*Displaying total on payment page*/
     var t = document.getElementById("tot");
       if(typeof t !== 'undefined' && t !== null) {
         document.getElementById("tot").innerHTML = total.toString();
