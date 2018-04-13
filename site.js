@@ -25,13 +25,7 @@ $('#payform').on('submit',
   
   )
   
-  /*Null check*/
-  function updateHTML(tot, total) {
-  var t = document.getElementById(tot);
-  if(typeof t !== 'undefined' && t !== null) {
-    document.getElementById(tot).innerHTML = value;
-  }
-}
+
 
 
 /*Displays picture upon click of dots*/
