@@ -20,10 +20,18 @@ $('#payform').on('submit',
         /*Determing total cost of tickets*/
         var total= 12.95*adultT + 6.95*childT;
         console.log('The total is:'+total);
-        /*document.getElementById("tot").innerHTML = total;*/
+        
       }
   
   )
+  
+  /*Null check*/
+  function updateHTML(tot, total) {
+  var t = document.getElementById(tot);
+  if(typeof t !== 'undefined' && t !== null) {
+    document.getElementById(tot).innerHTML = value;
+  }
+}
 
 
 /*Displays picture upon click of dots*/
