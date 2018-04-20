@@ -25,29 +25,28 @@
 
     <p>Choose which movie you'd like to buy tickets for</p>
     <select name="choices" id="choices">
-      <option name="pick">Select a Movie</option>
+      <option value="pick">Select a Movie</option>
       <option value="blackpanther">Black Panther</option>
       <option value="AWIT">A Wrinkle in Time</option>
       <option value="lovesimon">Love, Simon</option>
-      <opton value="redsparrow">Red Sparrow</option>
+      <option value="redsparrow">Red Sparrow</option>
       <option value="tombraider">Tomb Raider</option>
     </select>
 
      <div id="showtime">
       <p> choose a showtime: </p>
       <form action="ticketType.html">
-        <label for="10am">
-          <span><input type="submit" name="submit" class="showtime" value="10:00 am"/>
+        <label for="10am" id="10am">
+          <span><input type="submit" name="showtime1" class="showtime" value="10:00 am"/>
           </span></label>
-        <label for="250pm">
-          <span><input type="submit" name="submit" class="showtime" value="2:50 pm"
+        <label for="250pm" id="250pm">
+          <span><input type="submit" name="showtime2" class="showtime" value="2:50 pm"
              onclick="window.showtimes.href='ticketType.html'"/></span></label>
-        <label for="515pm">
-          <span><input type="submit" name="submit" class="showtime" value="5:15 pm"
+        <label for="515pm" id="515pm">
+          <span><input type="submit" name="showtime3" class="showtime" value="5:15 pm"
              onclick="window.showtimes.href='ticketType.html'"/></span></label>
       </form>
      </div>
-   </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="site.js"></script>
