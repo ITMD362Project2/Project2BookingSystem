@@ -15,12 +15,12 @@
         <ul>
           <li class="nav"><a href="index.html">Home</a></li>
           <li class="nav"><a href="Movies/movies.html">Previews</a></li>
-          <li class="nav"><a href="location.html">Get Tickets</a></li>
+          <li class="nav"><a href="showtimes.html">Get Tickets</a></li>
         </ul>
     </nav>
     <!--choose a movie drop down menu-->
     <header>
-      <h1>Showtimes:</h1>
+      <h1>Get Tickets</h1>
     </header>
 
     <p>Choose which movie you'd like to buy tickets for</p>
@@ -35,15 +35,17 @@
 
      <div id="showtime">
       <p> choose a showtime: </p>
-      <label for="10am">
-        <span><input type="submit" name="submit" class="showtime" value="10:00 am"
-           onclick="window.location.href='ticketType.html'"/></span></label>
-      <label for="250pm">
-        <span><input type="submit" name="submit" class="showtime" value="2:50 pm"
-           onclick="window.location.href='ticketType.html'"/></span></label>
-      <label for="515pm">
-        <span><input type="submit" name="submit" class="showtime" value="5:15 pm"
-           onclick="window.location.href='ticketType.html'"/></span></label>
+      <form action="ticketType.html">
+        <label for="10am">
+          <span><input type="submit" name="submit" class="showtime" value="10:00 am"/>
+          </span></label>
+        <label for="250pm">
+          <span><input type="submit" name="submit" class="showtime" value="2:50 pm"
+             onclick="window.showtimes.href='ticketType.html'"/></span></label>
+        <label for="515pm">
+          <span><input type="submit" name="submit" class="showtime" value="5:15 pm"
+             onclick="window.showtimes.href='ticketType.html'"/></span></label>
+      </form>
      </div>
    </section>
 
