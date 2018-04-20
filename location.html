@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Find a Theater Near You!</title>
+    <title>Get Movie Tickets</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
@@ -12,35 +12,26 @@
     <!-- nave bar -->
     <nav class="nav">
       <img src="Photos/logo4.1.png" alt="DUO Theaters" class="logo">
-          <ul>
-            <li class="nav"><a href="index.html">Home</a></li>
-            <li class="nav"><a href="Movies/movies.html">Previews</a></li>
-            <li class="nav"><a href="location.html">Get Tickets</a></li>
-          </ul></nav>
-          <header>
-      <h1>Find Your Nearest Theater:</h1>
+        <ul>
+          <li class="nav"><a href="index.html">Home</a></li>
+          <li class="nav"><a href="Movies/movies.html">Previews</a></li>
+          <li class="nav"><a href="location.html">Get Tickets</a></li>
+        </ul>
+    </nav>
+    <!--choose a movie drop down menu-->
+    <header>
+      <h1>Showtimes:</h1>
     </header>
 
-  <!--
-get location by geolocation
-  <section>
-    <h3 id="geo"> click the button to find theaters near you on a map:
-    <button onclick="getLocation()" id="locate"> locate</button> </h3>
-    <div id="mapholder"> </div>
-  </section>
--->
-
-<!-- get location by zip code -->
-  <section>
-    <form id="location" method="get" action="#null">
-      <label for="zip">Enter you zipcode: </label><p></p>
-      <input name="zip" id="zip" type="text" pattern="[0-9]*" />
-    </form>
-
-    <p> Your nearest UNO Theater: </p>
-    <div id="address">
-
-     </div>
+    <p>Choose which movie you'd like to buy tickets for</p>
+    <select name="choices" id="choices">
+      <option name="pick">Select a Movie</option>
+      <option value="blackpanther">Black Panther</option>
+      <option value="AWIT">A Wrinkle in Time</option>
+      <option value="lovesimon">Love, Simon</option>
+      <opton value="redsparrow">Red Sparrow</option>
+      <option value="tombraider">Tomb Raider</option>
+    </select>
 
      <div id="showtime">
       <p> choose a showtime: </p>
