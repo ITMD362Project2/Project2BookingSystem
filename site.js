@@ -70,75 +70,26 @@ $("#slideshow > figure:gt(0)").hide();
     .end().appendTo('#slideshow');},  5000);
 });
 
-//search by Geolocation
-/*var x = document.getElementById("geo");
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function showPosition(position) {
-    var latlon = position.coords.latitude + "," + position.coords.longitude;
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyA906jzwtnuC-NhutysGF95o0sn0_dFirk";
-    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-}
-
-function showError(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation.";
-            break;
-        case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable.";
-            break;
-        case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out.";
-            break;
-        case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred.";
-            break;
-    }
-}*/
-
-//Search by zip Code
+//To choose a movie
 
 $(document).ready(function(){
   $("#showtime").hide();
 });
 
-var theater = function() {
-  $('html').addClass('fx');
-};
-setTimeout(theater, 500);
+//to make the showtimes appear when a movie is selected
 
-$('.zipcode').on('click', function() {
-  $(this).find('input').focus();
-});
-
-$('#zip').on('keyup', function(e) {
-  var zip = $(this).val();
-  if (zip.length === 5) {
-    $.ajax({
-      url: 'http://api.zippopotam.us/us/' + zip,
-      statusCode: {
-        200: function(data) {
-          $("#address").prepend("DUO Theater Cinema ");
-          $("#address").append(data.places[0]["place name"] + ", ");
-          $("#address").append(data.places[0]["state abbreviation"]);
-
-          //to make the showtimes appear
-           $("#showtime").show();
-          },
-              //if the zipcode is invalid
-        404: function() {
-          $('label[for="zip"]').append(' <b>Are you sure about that ZIP code?</b>');
-        }
-      }
+$('#choices').change(function() {
+    if(this.value == "blackpanther") {
+        $("#showtime").show();
+    } else if(this.value == "AWIT") {
+        $("#showtime").show();
+    }  else if(this.value == "redsparrow") {
+          $("#showtime").show();
+    }  else if(this.value == "tombraider") {
+          $("#showtime").show();
+    }  else if(this.value == "lovesimon") {
+          $("#showtime").show();
+    } else {
+        $('#showtime').hide();
     }
-    );
-  }
 });
