@@ -14,7 +14,7 @@
           <ul>
             <li class="nav"><a href="index.html">Home</a></li>
             <li class="nav"><a href="Movies/movies.html">Previews</a></li>
-            <li class="nav"><a href="location.html">Get Tickets</a></li>
+            <li class="nav"><a href="showtimes.html">Get Tickets</a></li>
           </ul>
       </nav>
     <header> Select Your Tickets</header>
@@ -31,14 +31,14 @@
           <ol>
             <li>
               <label>Number of Adults</label>
-              <input placeholder="1" type="number" id="ad" name="adult"/>
+              <input placeholder="1" type="number" min="0" class="tickets" name="adult"/>
             </li>
             <li>
               <label>Number of Children</label>
-              <input placeholder="1" type="number" id="ch" name="child"/>
+              <input placeholder="1" type="number" min="0" class="tickets" name="child"/>
             </li>
           </ol>
-          <input type="submit" id="button1" value="Continue" />
+          <input type="submit" id="button1" value="Continue" class="button"/>
         </form>
       </section>
     </main>
