@@ -30,7 +30,37 @@
        } 
     }
  
-
+/*Empty Form Checker*/
+$('#payform').on('submit',
+  function Empty(form)
+  { 
+    if (form.email.value == "") {
+      alert( "Please enter your email address." );
+      return false ;
+    }
+    if (form.card-holder-name.value == "") {
+      alert( "Please enter the name of the card holder." );
+      return false ;
+    }
+    if (form.card-number.value == "") {
+      alert( "Please enter all digits of the card number." );
+      return false ;
+    }
+    if (form.expiry-month.value == "") {
+      alert( "Please enter card expiration month." );
+      return false ;
+    }
+    if (form.expiry-year.value == "") {
+      alert( "Please enter card expiration year." );
+      return false 
+    }
+    if (form.cvv.value == "") {
+      alert( "Please enter cvv number." );
+      return false ;
+    }
+    return true ;
+  })
+    
 
 /*Displays picture upon click of dots*/
 
