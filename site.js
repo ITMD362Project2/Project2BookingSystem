@@ -28,8 +28,7 @@ $('#payform').on('submit',
      }  
   )
   
-  $(function(){
-      $.get('ticketType.html', function displayCost(){
+   function displayCost(){
     
        var t = document.getElementById("tot");
        if(typeof t !== 'undefined' && t !== null) {
@@ -37,7 +36,7 @@ $('#payform').on('submit',
         document.getElementById("tot").innerHTML = 100;
        } 
     }
-  )})
+ 
 
 
 /*Displays picture upon click of dots*/
