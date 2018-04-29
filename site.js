@@ -22,6 +22,8 @@ $('#payform').on('submit',
 
         /*Determing total cost of tickets*/
         total= 12.95*adultT + 6.95*childT;
+        /*This will add the value of the result to a hidden field I added to the form*/
+        document.getElementById("result").value = total;
        
      }  
   )
@@ -30,7 +32,8 @@ $('#payform').on('submit',
     {
        var t = document.getElementById("tot");
        if(typeof t !== 'undefined' && t !== null) {
-        document.getElementById("tot").innerHTML = total.toString();
+        var ans= document.getElementById("result").value;
+        document.getElementById("tot").innerHTML = ans.toString();
        } 
     }
 
