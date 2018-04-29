@@ -28,8 +28,8 @@ $('#payform').on('submit',
      }  
   )
   
-  $(function displayCost(){
-      $.get('ticketType.html', function(){
+  $(function(){
+      $.get('ticketType.html', function displayCost(){
     
        var t = document.getElementById("tot");
        if(typeof t !== 'undefined' && t !== null) {
