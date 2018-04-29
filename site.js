@@ -1,13 +1,6 @@
-/*payment page submit*/
 
-$('#payform').on('submit',
-  function(e)
-    {
-      console.log('The form was submitted.');
-       alert("Thank you!");
-        e.preventDefault();
-    }
- )
+
+
 
  /*Calculating cost of tickets*/
  
@@ -37,7 +30,35 @@ $('#payform').on('submit',
        } 
     }
  
-
+/*Empty Form Checker*/
+$('#payform').on('submit',
+  function Empty(form)
+  { 
+    if (document.getElementById("email").value == "") {
+      alert( "Please enter your email address." );
+      return false ;
+    }
+    else if (document.getElementById("cd-name").value == "") {
+      alert( "Please enter the name of the card holder." );
+      return false ;
+    }
+    else if (document.getElementById("cnum").value == "") {
+      alert( "Please enter all digits of the card number." );
+      return false ;
+    }
+    else if (document.getElementById("e-month").value== "") {
+      alert( "Please enter card expiration month." );
+      return false ;
+    }
+    else if (document.getElementById("cvv").value== "") {
+      alert( "Please enter cvv number." );
+      return false ;
+    }
+    else{
+      return true ;
+    }
+  })
+    
 
 /*Displays picture upon click of dots*/
 
