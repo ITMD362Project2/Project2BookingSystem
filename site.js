@@ -12,7 +12,7 @@ $('#payform').on('submit',
  /*Calculating cost of tickets*/
  
  var total=0;
- $('#ticketSelection').on('submit',
+ /*$('#ticketSelection').on('submit',
     
     function costFunction()
       { 
@@ -22,14 +22,22 @@ $('#payform').on('submit',
 
         /*Determing total cost of tickets*/
         total= 12.95*adultT + 6.95*childT;
-        /*console.log('The total is:'+total);*/
-     }
+        /*console.log('The total is:'+total);
+     }*/
     function displayCost()
       {
-        /*Displaying total on payment page*/
-        var t = document.getElementById("tot");
-        if(typeof t !== 'undefined' && t !== null) {
-          document.getElementById("tot").innerHTML = total.toString();
+         $('#ticketSelection').on('submit',
+         
+          var adultT=document.getElementById("ad").value;
+          var childT=document.getElementById("ch").value;
+
+          /*Determing total cost of tickets*/
+          total= 12.95*adultT + 6.95*childT;
+          
+          /*Displaying total on payment page*/
+          var t = document.getElementById("tot");
+          if(typeof t !== 'undefined' && t !== null) {
+            document.getElementById("tot").innerHTML = total.toString();
         } 
       } 
     )
