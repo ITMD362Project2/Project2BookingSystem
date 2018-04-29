@@ -37,7 +37,7 @@ $('#payform').on('submit',
         document.getElementById("tot").innerHTML = 100;
        } 
     }
-  })
+  }))
 
 
 /*Displays picture upon click of dots*/
