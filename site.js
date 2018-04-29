@@ -28,14 +28,16 @@ $('#payform').on('submit',
      }  
   )
   
-  function displayCost()
-    {
+  $(function displayCost(){
+      $.get('ticketType.html', function(){
+    
        var t = document.getElementById("tot");
        if(typeof t !== 'undefined' && t !== null) {
         /*var ans= document.getElementById("result").value;*/
         document.getElementById("tot").innerHTML = 100;
        } 
     }
+  }
 
 
 /*Displays picture upon click of dots*/
