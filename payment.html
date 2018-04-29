@@ -32,13 +32,13 @@
 
         <!--the required attribute doesn't work in internet explorer(it is new in HTML5)-->
       <form action="confirmation.html" method="get" id="payform">
-        <fieldset>
+        <div class="border">
           <h2>Contact Info</h2>
 
           <label>Email</label>
             <input placeholder="email@example.com" type="Email" class="textbox" name="email" required/>
-        </fieldset>
-        <fieldset>
+        </div>
+        <div class="border">
           <h2>Payment Info</h2>
           <ol>
             <li>
@@ -89,7 +89,7 @@
               <!--replaced id="cvv"-->
             </li>
           </ol>
-        </fieldset>
+        </div>
         <div id="paynow"><button type="submit" class="button">Pay Now</button></div>
         <!--changed id to class-->
       </form>
