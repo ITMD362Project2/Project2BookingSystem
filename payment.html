@@ -15,14 +15,26 @@
       <!--button button-->
       <a href="ticketType.html" class="button">Go back</a>
 
+  <body onload="displayCost()">
+    <nav class="nav">
+        <img src="Photos/logo4.1.png" alt="DUO Theaters" class="logo"/>
+          <ul>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="Movies/movies.html">Previews</a></li>
+            <li class="nav"><a href="showtimes.html">Get Tickets</a></li>
+          </ul>
+    </nav>
+    <header>Confirm Purchase</header>
     <section id="price">
       <h1>Payment</h1>
       <p> Total: </p>
       <div id="tot"></div>
+     
     </section>
     <section id ="form">
       <form action="#null" method="get" id="payform">
         <!--the required attribute doesn't work in internet explorer(it is new in HTML5)-->
+      <form action="confirmation.html" method="get" id="payform">
         <fieldset>
           <h2>Contact Info</h2>
 
