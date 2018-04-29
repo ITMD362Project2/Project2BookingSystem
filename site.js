@@ -1,13 +1,6 @@
-/*payment page submit*/
 
-$('#payform').on('submit',
-  function(e)
-    {
-      console.log('The form was submitted.');
-       alert("Thank you!");
-        e.preventDefault();
-    }
- )
+
+
 
  /*Calculating cost of tickets*/
  
