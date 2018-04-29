@@ -32,8 +32,8 @@ $('#payform').on('submit',
     {
        var t = document.getElementById("tot");
        if(typeof t !== 'undefined' && t !== null) {
-        var ans= document.getElementById("result").value;
-        document.getElementById("tot").innerHTML = ans.toString();
+        /*var ans= document.getElementById("result").value;*/
+        document.getElementById("tot").innerHTML = 100;
        } 
     }
 
