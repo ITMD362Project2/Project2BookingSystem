@@ -32,7 +32,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	color: white;
 }
 ol, ul {
 	list-style: none;
@@ -53,8 +52,8 @@ table {
 /* general */
 
 html{
-  /* old background-color:#b3b3ff;  i like #660066, but #699fA1 is pretty*/
-	background-color: #006699;
+  /* old background-color:#006699*/
+	background-color: #003366;
 	font-size:1.125em;
 	line-height:1.222em;
 	/*font-family: 'Geneva', CenturyGothic, Geneva, AppleGothic, sans-serif;*/
@@ -137,11 +136,11 @@ footer{
   padding-bottom:0.5em;
 }
 
-#button1{
+/*#button1{
   margin-top:0.5em;
   width: 9em;
   height: 3em;
-}
+}*/
 
 h4{
 	color: black;
@@ -157,7 +156,7 @@ nav{
 	list-style-type: none;
 	margin: 1em;
 	overflow: hidden;
-	color: #FFFF81;
+	color: #FFCC00;
 	display: inline;
 }
 
@@ -282,6 +281,7 @@ div{
 	display: block;
 	margin: 0 auto;
 	float: center;
+	background-color: #CCCCCC;
 }
 /* all buttons */
 .button{
@@ -349,12 +349,15 @@ h2{
 
 .textbox{
 	width: 40%;
-  padding: 8px 4px;
+  padding: 0.6em 0.5em;/*8px 4px*/
   margin: 8px 0;
-  display: inline-block;
+	background-color: #CCCCCC;
+	border: none;
+  /*display: inline-block;
+	background-color: #CCCCCC;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
+  box-sizing: border-box;*/
 /*for the textboxes thst use  numbers*/
 	/*firefox*/
 	-moz-appearance: textfield;
@@ -363,6 +366,15 @@ h2{
 /*chrome*/
 .textbox::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+.textbox:focus{
+		background-color: white;
+}
+.dropdown{
+	padding: 0.5em;
+	max-width: 30%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
 }
 
 /* Ticket Type Page */
