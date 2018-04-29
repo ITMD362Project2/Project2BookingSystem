@@ -87,7 +87,8 @@ h3{
 
 footer{
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 3em;
+	position: absolute;
 }
 
 /*css for ticketType page*/
@@ -347,12 +348,23 @@ h2{
 	font-size: 1.5em;
 }
 
+fieldset{
+	border-right: none;
+	padding: 0.6em;
+	text-align: center;
+}
+
+#paynow{
+	text-align: center;
+	float: center;
+}
+
 .textbox{
 	width: 40%;
   padding: 0.6em 0.5em;/*8px 4px*/
   margin: 8px 0;
 	background-color: #CCCCCC;
-	border: none;
+	 border-radius: 4px;
   /*display: inline-block;
 	background-color: #CCCCCC;
   border: 1px solid #ccc;
@@ -387,4 +399,15 @@ h2{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+/*confirmation page*/
+#confirm{
+	text-align: center;
+	font-size: 1.3em;
+	padding: 0.1em;
+}
+
+#sus {
+	color: #CCCCCC;
 }
