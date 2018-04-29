@@ -75,9 +75,7 @@ $("#slideshow > figure:gt(0)").hide();
 $(document).ready(function(){
   $("#button").hide();
 });
-
 //to make the buttons appear when a movie is selected
-
 $('#choices').change(function() {
     if(this.value == "blackpanther") {
         $("#button").show();
