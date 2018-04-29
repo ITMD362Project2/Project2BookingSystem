@@ -38,27 +38,25 @@ $('#payform').on('submit',
       alert( "Please enter your email address." );
       return false ;
     }
-    if (document.getElementById("cd-name").value == "") {
+    else if (document.getElementById("cd-name").value == "") {
       alert( "Please enter the name of the card holder." );
       return false ;
     }
-    if (document.getElementById("cnum").value == "") {
+    else if (document.getElementById("cnum").value == "") {
       alert( "Please enter all digits of the card number." );
       return false ;
     }
-    if (document.getElementById("e-month").value== "") {
+    else if (document.getElementById("e-month").value== "") {
       alert( "Please enter card expiration month." );
       return false ;
     }
-    if (document.getElementById("year").value == "") {
-      alert( "Please enter card expiration year." );
-      return false 
-    }
-    if (document.getElementById("cvv").value== "") {
+    else if (document.getElementById("cvv").value== "") {
       alert( "Please enter cvv number." );
       return false ;
     }
-    return true ;
+    else{
+      return true ;
+    }
   })
     
 
