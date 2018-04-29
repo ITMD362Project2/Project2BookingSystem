@@ -7,13 +7,6 @@
     <link rel="stylesheet" media="screen" href="screen.css"/>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
   </head>
-  <body>
-    <!-- logo -->
-      <img src="Photos/logo4.1.png" alt="DUO Theaters" class="logo">
-
-      <p></p>
-      <!--button button-->
-      <a href="ticketType.html" class="button">Go back</a>
 
   <body onload="displayCost()">
     <nav class="nav">
@@ -24,15 +17,18 @@
             <li class="nav"><a href="showtimes.html">Get Tickets</a></li>
           </ul>
     </nav>
-    <header>Confirm Purchase</header>
-    <section id="price">
-      <h1>Payment</h1>
-      <p> Total: </p>
+    <!--back button-->
+    <a href="ticketType.html" class="button">Go back</a>
+
+    <section>
+      <h1>Payment Information</h1>
+      <p>Total number of tickets:</p>
+      <div id="ticks"></div>
+      <p> Total price: </p>
       <div id="tot"></div>
-     
     </section>
+
     <section id ="form">
-      <form action="#null" method="get" id="payform">
         <!--the required attribute doesn't work in internet explorer(it is new in HTML5)-->
       <form action="confirmation.html" method="get" id="payform">
         <fieldset>
@@ -56,7 +52,7 @@
             </li>
             <li>
               <label>Expiration Date</label>
-                <select name="expiry-month" id="month">
+                <select name="expiry-month" class="dropdown">
                   <option>Month</option>
                   <option value="01">Jan (01)</option>
                   <option value="02">Feb (02)</option>
@@ -71,7 +67,7 @@
                   <option value="11">Nov (11)</option>
                   <option value="12">Dec (12)</option>
                 </select>
-                <select name="expiry-year" id="year">
+                <select name="expiry-year" class="dropdown">
                   <option value="year">Year</option>
                   <option value="13">2018</option>
                   <option value="14">2019</option>
