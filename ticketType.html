@@ -17,9 +17,9 @@
             <li class="nav"><a href="showtimes.html">Get Tickets</a></li>
           </ul>
       </nav>
-    <header> Select Your Tickets</header>
+    <h1> Select Your Tickets</h1>
     <section id="pricing">
-      <h1>Pricing</h1>
+      <h2>Prices</h2>
       <ol>
         <li> Adults: $12.95</li>
         <li> Children: $6.95 </li>
@@ -27,33 +27,18 @@
     </section>
     <section id="tickets">
       <form action="payment.html" method="get" id="ticketSelection">
-        <h2>Choose Your Tickets:</h2>
+        <h4>Select the number of tickets you want to purchase</h4>
           <ol>
             <li>
-              <label>Number of Adults</label>
+              <label>Adults</label>
               <input placeholder="1" type="number" min="0" id="ad" class="tickets" name="adult"/>
             </li>
             <li>
-              <label>Number of Children</label>
+              <label>Children</label>
               <input placeholder="1" type="number" min="0" id="ch" class="tickets" name="child"/>
             </li>
           </ol>
           <input type="submit" id="button1" value="Continue" class="button"/>
-        <p>Choose Your Tickets:</p>
-          <ol>
-            <li>
-              <label for="adults">Number of Adults</label>
-              <input type="number" min="0" placeholder="1" type="number" id="ad" name="adult"/>
-            </li>
-            <li>
-              <label for="children">Number of Children</label>
-              <input type="number" min="0" placeholder="1" type="number" id="ch" name="child"/>
-            </li>
-          </ol>
-          
-          <input type="submit" id="button1" value="Continue" />
-          <input type="hidden" value="0" name="result" id="result"/>
-        </form>
     </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
