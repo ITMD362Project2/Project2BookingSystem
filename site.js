@@ -1,37 +1,64 @@
-/*payment page submit*/
 
-$('#payform').on('submit',
-  function(e)
-    {
-      console.log('The form was submitted.');
-       alert("Thank you!");
-        e.preventDefault();
-    }
- )
+
+
 
  /*Calculating cost of tickets*/
+ 
+ var total=0;
  $('#ticketSelection').on('submit',
+    
     function costFunction()
-      {
+      { 
         /*getting values entered by user for number of tickets*/
         var adultT=document.getElementById("ad").value;
         var childT=document.getElementById("ch").value;
 
         /*Determing total cost of tickets*/
-        var total= 12.95*adultT + 6.95*childT;
-        console.log('The total is:'+total);
-
-        /*Displaying total on payment page*/
-      var t = document.getElementById(tot);
-      if(typeof t !== 'undefined' && t !== null) {
-      document.getElementById(tot).innerHTML = total.toString();
-      }
-
-      }
-
+        total= 12.95*adultT + 6.95*childT;
+        /*This will add the value of the result to a hidden field I added to the form*/
+        document.getElementById("result").value = total;
+       
+     }  
   )
-
-
+  
+   function displayCost(){
+    
+       var t = document.getElementById("tot");
+       if(typeof t !== 'undefined' && t !== null) {
+        /*var ans= document.getElementById("result").value;*/
+        document.getElementById("tot").innerHTML = 100;
+       } 
+    }
+ 
+/*Empty Form Checker*/
+$('#payform').on('submit',
+  function Empty(form)
+  { 
+    if (document.getElementById("email").value == "") {
+      alert( "Please enter your email address." );
+      return false ;
+    }
+    else if (document.getElementById("cd-name").value == "") {
+      alert( "Please enter the name of the card holder." );
+      return false ;
+    }
+    else if (document.getElementById("cnum").value == "") {
+      alert( "Please enter all digits of the card number." );
+      return false ;
+    }
+    else if (document.getElementById("e-month").value== "") {
+      alert( "Please enter card expiration month." );
+      return false ;
+    }
+    else if (document.getElementById("cvv").value== "") {
+      alert( "Please enter cvv number." );
+      return false ;
+    }
+    else{
+      return true ;
+    }
+  })
+    
 
 /*Displays picture upon click of dots*/
 
