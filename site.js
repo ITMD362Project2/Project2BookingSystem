@@ -34,27 +34,27 @@
 $('#payform').on('submit',
   function Empty(form)
   { 
-    if (form.email.value == "") {
+    if (document.getElementById("email").value == "") {
       alert( "Please enter your email address." );
       return false ;
     }
-    if (form.card-holder-name.value == "") {
+    if (document.getElementById("cd-name").value == "") {
       alert( "Please enter the name of the card holder." );
       return false ;
     }
-    if (form.card-number.value == "") {
+    if (document.getElementById("cnum").value == "") {
       alert( "Please enter all digits of the card number." );
       return false ;
     }
-    if (form.expiry-month.value == "") {
+    if (document.getElementById("e-month").value== "") {
       alert( "Please enter card expiration month." );
       return false ;
     }
-    if (form.expiry-year.value == "") {
+    if (document.getElementById("year").value == "") {
       alert( "Please enter card expiration year." );
       return false 
     }
-    if (form.cvv.value == "") {
+    if (document.getElementById("cvv").value== "") {
       alert( "Please enter cvv number." );
       return false ;
     }
