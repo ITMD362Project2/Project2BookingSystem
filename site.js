@@ -100,23 +100,21 @@ $("#slideshow > figure:gt(0)").hide();
 //To choose a movie
 
 $(document).ready(function(){
-  $("#showtime").hide();
+  $("#button").hide();
 });
-
-//to make the showtimes appear when a movie is selected
-
+//to make the buttons appear when a movie is selected
 $('#choices').change(function() {
     if(this.value == "blackpanther") {
-        $("#showtime").show();
+        $("#button").show();
     } else if(this.value == "AWIT") {
-        $("#showtime").show();
+        $("#button").show();
     }  else if(this.value == "redsparrow") {
-          $("#showtime").show();
+          $("#button").show();
     }  else if(this.value == "tombraider") {
-          $("#showtime").show();
+          $("#button").show();
     }  else if(this.value == "lovesimon") {
-          $("#showtime").show();
+          $("#button").show();
     } else {
-        $('#showtime').hide();
+        $('#button').hide();
     }
 });
